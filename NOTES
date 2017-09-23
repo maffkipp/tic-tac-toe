@@ -1,0 +1,7 @@
+NOTES
+
+-fillCell takes a class name and adds an event listener to every square
+that turns it into that class when clicked.
+
+-clickBox iterates a counter every time the container is clicked, and
+calls the fillCell function with a call of the
