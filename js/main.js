@@ -82,14 +82,14 @@ function turnProcess(player, cell) {
 // Checks if a player has a winning combination
 function afterTurn(player) {
 
-  for (let i=0; i<winConditions.length; i++) {
-    if (arrayContainsArray(player.taken, winConditions[i])) {
+  winConditions.forEach(win =>  {
+    if (arrayContainsArray(player.taken, win)) {
       winMessage(player);
       cells.forEach(cell => {
         cell.classList.add('no');
       });
     }
-  }
+  });
 }
 
 // Adds functionality to the reset button
@@ -136,13 +136,13 @@ function stalemateCondition() {
 
 // Checks if an array contains all elements of another array
 function arrayContainsArray(current, reference) {
-  let contains = false;
-  for (let i=0; i<reference.length; i++) {
-    if (current.indexOf(reference[i]) === -1) {
-      return false;
+  let contains = true;
+  reference.forEach(index => {
+    if (current.indexOf(index) === -1) {
+      contains = false;
     }
-  }
-  return true;
+  });
+  return contains;
 }
 
 

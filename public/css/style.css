@@ -26,11 +26,11 @@ body {
         body .container .row .cell:hover {
           background-color: #E7E7E7; }
       body .container .row .mid-row {
-        border-top: 5px solid #D3D3D3;
-        border-bottom: 5px solid #D3D3D3; }
+        border-top: 5px solid #E7E7E7;
+        border-bottom: 5px solid #E7E7E7; }
       body .container .row .mid-col {
-        border-left: 5px solid #D3D3D3;
-        border-right: 5px solid #D3D3D3; }
+        border-left: 5px solid #E7E7E7;
+        border-right: 5px solid #E7E7E7; }
       body .container .row .x {
         background: url(../../images/x.png);
         background-repeat: no-repeat;
@@ -62,7 +62,7 @@ body {
       font-family: "Lato", sans-serif;
       font-size: 25px;
       color: #696969;
-      background-color: #D3D3D3;
+      background-color: #E7E7E7;
       width: 50%;
       height: 50px;
       border: none;

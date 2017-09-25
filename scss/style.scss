@@ -4,12 +4,14 @@ $heavy: 700;
 $light: 300;
 
 $off-white: #F9FFFF;
-$light-grey: #D3D3D3;
+$light-grey: #E7E7E7;
 $grey: #BDBDBD;
 $dark-grey: #696969;
 $text-color: #2A2A2A;
 $blue: #718DA5;
 $tan: #D4A86A;
+
+$border-style: 5px solid $light-grey;
 
 body {
   background-color: $off-white;
@@ -37,18 +39,18 @@ body {
         width: 155px;
         transition: background-color 300ms;
         &:hover {
-          background-color: #E7E7E7;
+          background-color: $light-grey;
         }
       }
 
       .mid-row {
-        border-top: 5px solid $light-grey;
-        border-bottom: 5px solid $light-grey;
+        border-top: $border-style;
+        border-bottom: $border-style;
       }
 
       .mid-col {
-        border-left: 5px solid $light-grey;
-        border-right: 5px solid $light-grey;
+        border-left: $border-style;
+        border-right: $border-style;
       }
       .x {
         background: url(../../images/x.png);
