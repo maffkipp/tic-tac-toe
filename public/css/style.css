@@ -1,91 +1,89 @@
 body {
   background-color: #F9FFFF;
   color: #696969; }
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-h1 {
-  font-size: 50px;
-  font-family: "Catamaran", sans-serif;
-  font-weight: 300;
-  letter-spacing: 5px;
-  text-align: center;
-  margin: 25px 0; }
-
-.cell {
-  height: 155px;
-  width: 155px; }
-
-.mid-row {
-  border-top: 5px solid #D3D3D3;
-  border-bottom: 5px solid #D3D3D3; }
-
-.mid-col {
-  border-left: 5px solid #D3D3D3;
-  border-right: 5px solid #D3D3D3; }
-
-.x {
-  background: url(../../images/x.png);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.o {
-  background: url(../../images/o.png);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.container {
-  margin: 0 auto;
-  text-align: center; }
-
-.aux-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 450px;
-  margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 5px; }
-
-.reset {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  font-family: "Lato", sans-serif;
-  font-size: 25px;
-  color: #696969;
-  background-color: #D3D3D3;
-  width: 50%;
-  height: 50px;
-  border: none;
-  border-radius: 4px;
-  margin: 5px auto; }
-  .reset:hover, .reset:focus {
-    outline: none;
-    background-color: #BDBDBD; }
-  .reset:click {
-    background-color: #696969; }
-
-.game-text {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  font-size: 40px;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-align: center; }
+  body h1 {
+    font-size: 50px;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 25px 0; }
+  body .container {
+    margin: 0 auto;
+    text-align: center; }
+    body .container .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      body .container .row .cell {
+        height: 155px;
+        width: 155px;
+        -webkit-transition: background-color 300ms;
+        transition: background-color 300ms; }
+        body .container .row .cell:hover {
+          background-color: #E7E7E7; }
+      body .container .row .mid-row {
+        border-top: 5px solid #D3D3D3;
+        border-bottom: 5px solid #D3D3D3; }
+      body .container .row .mid-col {
+        border-left: 5px solid #D3D3D3;
+        border-right: 5px solid #D3D3D3; }
+      body .container .row .x {
+        background: url(../../images/x.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #718DA5; }
+      body .container .row .o {
+        background: url(../../images/o.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #D4A86A; }
+  body .aux-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 450px;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5px; }
+    body .aux-container .reset {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      font-family: "Lato", sans-serif;
+      font-size: 25px;
+      color: #696969;
+      background-color: #D3D3D3;
+      width: 50%;
+      height: 50px;
+      border: none;
+      border-radius: 4px;
+      margin: 5px auto;
+      -webkit-transition: background-color 200ms;
+      transition: background-color 200ms; }
+      body .aux-container .reset:hover {
+        background-color: #BDBDBD; }
+      body .aux-container .reset:focus {
+        outline: none; }
+      body .aux-container .reset:active {
+        background-color: #696969; }
+    body .aux-container .game-text {
+      -webkit-box-flex: 2;
+          -ms-flex: 2;
+              flex: 2;
+      font-size: 40px;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      letter-spacing: 3px;
+      text-align: center; }
 
 /*# sourceMappingURL=maps/style.css.map */

@@ -8,6 +8,8 @@ $light-grey: #D3D3D3;
 $grey: #BDBDBD;
 $dark-grey: #696969;
 $text-color: #2A2A2A;
+$blue: #718DA5;
+$tan: #D4A86A;
 
 body {
   background-color: $off-white;
@@ -33,6 +35,10 @@ body {
       .cell {
         height: 155px;
         width: 155px;
+        transition: background-color 300ms;
+        &:hover {
+          background-color: #E7E7E7;
+        }
       }
 
       .mid-row {
@@ -48,12 +54,14 @@ body {
         background: url(../../images/x.png);
         background-repeat: no-repeat;
         background-position: center;
+        background-color: $blue;
       }
 
       .o {
         background: url(../../images/o.png);
         background-repeat: no-repeat;
         background-position: center;
+        background-color: $tan;
       }
 
     }
@@ -79,9 +87,15 @@ body {
       border: none;
       border-radius: 4px;
       margin: 5px auto;
-      &:hover, &:focus {
-        outline: none;
+      transition: background-color 200ms;
+      &:hover {
         background-color: $grey;
+      }
+      &:focus {
+        outline: none;
+      }
+      &:active {
+        background-color: $dark-grey;
       }
     }
 
